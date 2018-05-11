@@ -7,8 +7,10 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-        title: 'Tron Remake',
-        meta: {viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
+      title: 'Tron Remake',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+      },
     }),
   ],
   output: {
