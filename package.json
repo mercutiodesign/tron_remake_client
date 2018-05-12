@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": ["*.css"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write src/**/*.js src/**/*.css",
-    "lint": "eslint --cache --ext .js src",
+    "format": "prettier --write src/**/*.js src/**/*.css *.js",
+    "lint": "eslint src *.js",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
